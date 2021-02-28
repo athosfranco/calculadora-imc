@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!---FontAwesome CDN & CSS Link-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI Calc</title>
+  </head>
+
+  <body>
+    <h1 id="title"><i class="fas fa-calculator"></i> Calculadora de IMC</h1>
+
+    <div class="calculator-container">
+      <label for="height">Sua altura (cm):</label>
+      <input
+        type="number"
+        id="height"
+        placeholder="Sua altura em centímetros."
+        max="282"
+        maxlength="3"
+      />
+      <label for="weight">Seu peso (kg):</label>
+      <input
+        type="number"
+        id="weight"
+        placeholder="Seu peso em quilogramas."
+        max="635"
+        maxlength="3"
+      />
+      <button type="submit" onclick="calc()" class="buttoncalc">
+        Calcular IMC
+      </button>
+    </div>
+
+    <h1 id="imc">O que é IMC?</h1>
+    <p id="desc">
+      O <span class="highlight">índice de massa corporal (IMC)</span> é uma
+      medida internacional usada para calcular se uma pessoa está no peso ideal.
+      Desenvolvido pelo polímata Lambert Quételet no fim do século XIX, trata-se
+      de um método fácil e rápido para a avaliação do nível de gordura de cada
+      pessoa, sendo, por isso, um preditor internacional de obesidade adotado
+      pela Organização Mundial da Saúde (OMS).
+      <a
+        target="_blank"
+        href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal"
+        >Leia mais sobre IMC clicando aqui.</a
+      >
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
